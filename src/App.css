@@ -1,0 +1,1391 @@
+/* Base Styles */
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-btn.primary {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+}
+
+.nav-btn.primary:hover {
+  background-color: #1565c0;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 150px;
+
+  /* Modern gradient with your brand color */
+  background: linear-gradient(135deg, #0b6666, #0e8888, #0b4444);
+  background-size: 200% 200%;
+  animation: gradientMove 6s ease infinite;
+
+  color: #fff;
+}
+
+/* Animate gradient for a lively look */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Countdown styling */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.countdown div {
+  text-align: center;
+}
+
+/* Normal style for all time boxes */
+.countdown .time-box .number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  background: #0b6666;
+  /* brand teal */
+  padding: 10px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(11, 102, 102, 0.5);
+}
+
+
+
+
+
+
+
+/* New Style for the Date */
+.event-date-book {
+  font-family: 'Book Antiqua', 'Palatino Linotype', 'Palatino', serif;
+  font-size: 1.1rem;
+  /* Adjust size to fit the card */
+  font-weight: 700;
+  color: #e7ecec;
+  /* A warm, brownish color for a book-like feel */
+  background-color: #0b6666;
+  /* Light, parchment-like background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #d2b48c;
+  /* A subtle border */
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Updated style for the Countdown Timer */
+/* Update the Small Countdown Styling */
+.countdown-timer-small {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  /* The Key Changes for Glow */
+  color: white;
+  /* Text color */
+  background-color: #0b6666;
+  /* Base background color */
+  border: 1px solid #084c4c;
+  border-radius: 6px;
+  padding: 8px;
+
+  /* This creates the glowing effect */
+  box-shadow: 0 0 10px #0b6666,
+    /* A soft glow around the box */
+    0 0 20px rgba(11, 102, 102, 0.5);
+  /* A wider, more transparent glow */
+  margin-top: 15px;
+  /* Fix overlapping */
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Add a glowing effect to the numbers and labels */
+.countdown-timer-small .time-value,
+.countdown-timer-small .time-label {
+  text-shadow: 0 0 5px #0a0808;
+  /* A subtle white glow on the text */
+}
+
+/* Other styles from the previous response remain the same */
+.countdown-timer-small .time-unit {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-timer-small .time-value {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.countdown-timer-small .time-label {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+
+
+
+
+/* Optional: responsive adjustments */
+@media (max-width: 768px) {
+  .countdown-timer-small .time-unit {
+    min-width: 35px;
+    padding: 3px 5px;
+  }
+
+  .countdown-timer-small .time-value {
+    font-size: 0.8rem;
+  }
+
+  .countdown-timer-small .time-label {
+    font-size: 0.65rem;
+  }
+}
+
+/* Hero Section Countdown (Big Soon Event) */
+.hero-section .countdown-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 2rem;
+  /* Bigger overall font */
+  color: #f2f3f5;
+}
+
+.hero-section .countdown-timer h2 {
+  font-size: 4rem;
+  /* Big title for "Soon Event" */
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero-section .countdown-timer .timer-display {
+  display: flex;
+  gap: 25px;
+}
+
+.hero-section .countdown-timer .time-unit {
+  text-align: center;
+}
+
+.hero-section .countdown-timer .time-value {
+  font-size: 3rem;
+  /* Big numbers */
+  font-weight: bold;
+}
+
+.hero-section .countdown-timer .time-label {
+  font-size: 1.2rem;
+  /* Label smaller than numbers */
+  display: block;
+  margin-top: 5px;
+}
+
+
+/* CTA Buttons */
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cta-btn {
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta-btn.primary {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+}
+
+.cta-btn.secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Featured Events */
+.featured-events {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 30px;
+  margin: 2rem auto;
+  max-width: 1400px;
+  padding: 0 2rem;
+  justify-items: stretch;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  /* keeps image rounded */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  /* Override index.css */
+  max-width: none;
+  height: auto;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.event-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  /* crop excess instead of stretching */
+  display: block;
+}
+
+.event-card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem 1rem 0.5rem;
+  color: #333;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0 1rem 1rem;
+  line-height: 1.4;
+}
+
+.event-card button {
+  display: block;
+  margin: 0 1rem 1rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-card button:hover {
+  background-color: #0b6666;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #f5f7fa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonial-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.testimonial-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  font-weight: bold;
+}
+
+.testimonial-author span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #0b6666;
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+  color: #ffffff !important;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #ffffff !important;
+}
+
+/* Footer */
+.home-footer {
+  background-color: #263238;
+  color: white;
+  padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  margin-bottom: 1.5rem;
+  color: #ff9800;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.newsletter-form button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #37474f;
+  font-size: 0.9rem;
+  color: #b0bec5;
+}
+
+/* Admin Panel Container */
+.admin-panel {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.admin-panel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Filter Buttons */
+.admin-panel>div:first-of-type {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.admin-panel button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.admin-panel button:hover {
+  background-color: #2563eb;
+}
+
+.admin-panel button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Form Container */
+.admin-panel div:nth-of-type(2) {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.admin-panel h3 {
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Inputs and Textareas */
+.admin-panel input[type="text"],
+.admin-panel input[type="date"],
+.admin-panel input[type="time"],
+.admin-panel input[type="file"],
+.admin-panel select,
+.admin-panel textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.admin-panel textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* Add/Update Buttons */
+.admin-panel div:nth-of-type(2) button {
+  margin-right: 10px;
+}
+
+/* Event List */
+.admin-panel div:nth-of-type(3) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.admin-panel div:nth-of-type(3)>div {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.admin-panel div:nth-of-type(3)>div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Event Images */
+/* Event card images for home & submitted events */
+.event-card img,
+.admin-panel div:nth-of-type(3) img {
+  max-width: 100%;
+  max-height: 200px;
+  /* limit height */
+  object-fit: cover;
+  /* crop excess instead of stretching */
+  border-radius: 6px;
+}
+
+
+/* Delete Button */
+.admin-panel div:nth-of-type(3) button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ef4444;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.admin-panel div:nth-of-type(3) button:hover {
+  background-color: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .admin-panel div:nth-of-type(3) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1a202c;
+  /* Dark navy background */
+  color: #f7fafc;
+  /* Light text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  padding-top: 60px;
+  /* same as navbar height */
+
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #63b3ed;
+  /* Soft blue */
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #f7fafc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-link:hover {
+  color: #63b3ed;
+  /* Hover soft blue */
+}
+
+.btn-primary {
+  background-color: #63b3ed;
+  color: #1a202c;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #4299e1;
+  color: white;
+}
+
+.btn-logout {
+  background: transparent;
+  border: none;
+  color: #e53e3e;
+  /* Red */
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.btn-logout:hover {
+  color: #c53030;
+}
+
+.page-content {
+  padding-top: 70px;
+  /* enough space for navbar height */
+}
+
+/* Login.css - Clean Modern Design */
+
+/* Login Page Base */
+.login-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0b6666 0%, #0b6666 100%);
+  padding: 20px;
+}
+
+/* Login Form Container */
+.login-container>div {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  backdrop-filter: blur(10px);
+}
+
+/* Header */
+.login-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0b6666;
+  letter-spacing: -0.5px;
+}
+
+/* Form Styles */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-container label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a5568;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 16px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #fafafa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #0b6666;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.login-container input::placeholder {
+  color: #a0aec0;
+  font-weight: 400;
+}
+
+/* Login Button */
+.login-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #0b6666;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #e8e416;
+  transform: translateY(-2px);
+}
+
+/* Forgot Password */
+.login-container .forgot-btn {
+  background: none;
+  border: none;
+  color: #0b6666;
+  padding: 10px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+
+.login-container .forgot-btn:hover {
+  color: #a9b3b3;
+}
+
+/* Sign Up Section */
+.login-container p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #718096;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.login-container a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-container a:hover {
+  color: #98919f;
+}
+
+/* Messages */
+.login-container .error {
+  background: #fed7d7;
+  color: #c53030;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #feb2b2;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.login-container .success {
+  background: #c6f6d5;
+  color: #276749;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #9ae6b4;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-container button[type="submit"]:disabled {
+  animation: pulse 1.5s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-container>div {
+    padding: 40px 30px;
+    margin: 10px;
+  }
+
+  .login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container>div {
+    padding: 35px 25px;
+    border-radius: 16px;
+  }
+
+  .login-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .login-container input {
+    padding: 15px 16px;
+  }
+
+  .login-container button[type="submit"] {
+    padding: 16px;
+  }
+}
+
+/* Smooth animations */
+.login-container>div {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input focus effects */
+.input-group {
+  position: relative;
+}
+
+.input-group:focus-within label {
+  color: #667eea;
+}
+
+/* Button loading state */
+.button-loading {
+  position: relative;
+  color: transparent !important;
+}
+
+.button-loading::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 0.8s ease infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+
+/* Signup Page Styling (same as login) */
+.signup-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.signup-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container h2 {
+  font-size: 2.5rem;
+  color: #0b6666;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+.signup-container .error {
+  color: #0b6666;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-container label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.signup-container input {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.signup-container input:focus {
+  border-color: #0b6666;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+.signup-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #0b6666;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-container button:hover {
+  background: #e4ce22;
+  transform: translateY(-2px);
+}
+
+.signup-container p {
+
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.signup-container p a {
+  color: #0b6666;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.signup-container p a:hover {
+  text-decoration: underline;
+  color: #87bcbc;
+}
+
+.stats-section {
+  background-color: #0b6666;
+  /* dark teal background */
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+  /* optional rounded corners */
+}
+
+.stat-item {
+  text-align: center;
+  color: #fff;
+  /* makes both numbers and labels white */
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  /* ensure numbers stay white */
+}
+
+.stat-label {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  color: #fff;
+  /* ensure labels stay white too */
+}
+
+.countdown-timer-small {
+  display: flex;
+  align-items: center;
+  /* vertically center label and timer */
+  gap: 1rem;
+  /* space between "Starts in:" and timer units */
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.timer-units {
+  display: flex;
+  gap: 0.5rem;
+  /* space between each DHMS unit */
+}
+
+.time-unit-small {
+  display: flex;
+  flex-direction: column;
+  /* number above letter */
+  align-items: center;
+}
+
+.time-value-small {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.time-label-small {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* Event Type Styles - BELOW IMAGE */
+.event-type-container {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.event-type-badge {
+  display: inline-block;
+  background-color: #0b6666;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(11, 102, 102, 0.8);
+}
+
+.event-type-hero {
+  display: inline-block;
+  background-color: #0b6666;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(11, 102, 102, 0.8);
+}
+
+.event-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.event-date {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1000;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Rest of your existing styles */
+.event-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 3px solid #f0f0f0;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-color: #0b6666;
+}
+
+.event-content {
+  padding: 20px;
+}
+
+.event-content h3 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* Override any inline styles */
+.event-type-badge[style] {
+  background-color: #0b6666 !important;
+  color: white !important;
+  border: 3px solid white !important;
+  box-shadow: 0 0 15px rgba(11, 102, 102, 0.8) !important;
+}
+
+.event-type-hero[style] {
+  background-color: #0b6666 !important;
+  color: white !important;
+  border: 3px solid white !important;
+  box-shadow: 0 0 20px rgba(11, 102, 102, 0.8) !important;
+}
+
+/* Fix Hero Section Next Event Text Size */
+.hero-section .countdown-timer h2 {
+  font-size: 2.5rem;
+  /* Reduced from 4rem */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section .countdown-timer .time-value {
+  font-size: 2rem;
+  /* Reduced from 3rem */
+  font-weight: bold;
+}
+
+.hero-section .countdown-timer .time-label {
+  font-size: 1rem;
+  /* Reduced from 1.2rem */
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section .countdown-timer h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section .countdown-timer .time-value {
+    font-size: 1.5rem;
+  }
+
+  .hero-section .countdown-timer .time-label {
+    font-size: 0.8rem;
+  }
+
+  .hero-section .countdown-timer .timer-display {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section .countdown-timer h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section .countdown-timer .timer-display {
+    gap: 10px;
+  }
+
+  .hero-section .countdown-timer .time-value {
+    font-size: 1.2rem;
+  }
+}
+
+/* Style for Login to Save button */
+.btn-login-prompt {
+  background-color: #0b6666 !important;
+  color: white !important;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: not-allowed;
+  width: 100%;
+  margin: 0 1rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-login-prompt:hover {
+  background-color: #084c4c !important;
+}
+
+/* Also style the other dashboard buttons for consistency */
+.btn-add-dashboard {
+  background-color: #0b6666 !important;
+  color: white !important;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin: 0 1rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-add-dashboard:hover {
+  background-color: #084c4c !important;
+}
+
+.btn-remove-dashboard {
+  background-color: #666 !important;
+  color: white !important;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin: 0 1rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-remove-dashboard:hover {
+  background-color: #555 !important;
+}

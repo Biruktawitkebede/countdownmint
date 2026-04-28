@@ -1,0 +1,97 @@
+.footer {
+  background-color: #0b6666;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff; /* icon always white */
+  transition: all 0.3s;
+}
+
+/* Brand colors for the circles */
+.social-circle.facebook { background-color: #1877F2; }
+.social-circle.twitter { background-color: #1DA1F2; }
+.social-circle.linkedin { background-color: #0077B5; }
+.social-circle.telegram { background-color: #0088cc; }
+.social-circle.youtube { background-color: #FF0000; }
+
+/* Hover effect just slightly darkens the circle */
+.social-circle:hover {
+  filter: brightness(0.85);
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #ffffff33;
+  padding-top: 15px;
+  font-size: 14px;
+}
+.footer-logo {
+  width: 120px; /* adjust as needed */
+  margin-bottom: 15px;
+}
+
+.footer-ref-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffd700; /* golden for visibility */
+  text-decoration: underline;
+}
+
+.footer-ref-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
